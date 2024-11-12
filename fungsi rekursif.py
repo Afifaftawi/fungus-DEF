@@ -1,16 +1,15 @@
-#fungsi mencari luas persegi panjang 
-def luaspersegipanjang (panjang, lebar):
-    return panjang*lebar
-def kelilingpersegipanjang(panjang,lebar):
-    return 2*(panjang+lebar)
+#fungdi rekursif adalah fungsi yang memangil dirinya sendri
 
-panjang=int(input("masukan panjang :"))
-lebar=int(input("masukan lebar :"))
+#fungsi mencari fakatorial
 
-hasil_luas=luaspersegipanjang(panjang,lebar)
-hasil_keliling=kelilingpersegipanjang(panjang,lebar)
-#nilai luas jika panjang =10, dan lebar =5
-hasil_luas = luaspersegipanjang(panjang, lebar)
-print ("hasil luas adalah",hasil_luas)
-print("keliling adalah",hasil_keliling)
+def faktorial (n):
+    if n==0 or n==1:
+        return 1
+    else :
+        return n*(faktorial(n -1))
+    
+    #mencari nilai faktorial
 
+a= int(input("masukan nilai yang akan dicari :"))
+cari_faktorial=faktorial(a)
+print ("nilai dari ", a,"! adalah",cari_faktorial)
